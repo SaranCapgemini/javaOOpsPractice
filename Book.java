@@ -32,11 +32,21 @@ public class Book{
     }
 
     public static void main(String args[]){
-        Book book = new Book();
-        book.settitle("Mt15");
-        book.setauthor("Saran");
-        book.setprice(2.15f);
+        Book book1 = new Book();
+        book1.settitle("Mt15");
+        book1.setauthor("Saran");
+        book1.setprice(2.15f);
 
-        System.out.println(book.toString());
+        System.out.println(book1.toString());
+
+        Book book2 = new Book();
+        book2.settitle("Mt16");
+        book2.setauthor("Saran");
+        book2.setprice(2.15f);
+
+        System.out.println(book2);
+
+        CompareBook compareBook = new CompareBook();
+        compareBook.compareBooks(book1, book2);
     }
 }
