@@ -28,6 +28,15 @@ public class Book{
     }
 
     public String toString(){
-        return The book title is +title+ " written by " + author + " and costs " + price;
+        return "The book title is " +title+ " written by " + author + " and costs " + price;
+    }
+
+    public static void main(String args[]){
+        Book book = new Book();
+        book.settitle("Mt15");
+        book.setauthor("Saran");
+        book.setprice(2.15f);
+
+        System.out.println(book.toString());
     }
 }
